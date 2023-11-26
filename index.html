@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/2875f7db2e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container"> 
+        <nav>
+            <img src="images/logo111.png" alt="logo111">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#Portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+            </ul>
+            <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class = "header-text">
+            <p>Electronics Engineer</p>
+            <h1>Hi, I'm <span>Surya<br>Teja</span></h1>
+        </div>
+    </div>
+</div>
+<!---------about----------> 
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/logoooo271.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Passionate to learn new technologies and to excel innovative technology application.
+                   Seeking a challenging position which will enable me to continuously learn, create, 
+                   innovate and simultaneously contribute to the short and long term goals of the 
+                   organization effectively using technological & managerial skills.</p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Design Engineering</span><br>Microcircuit Technology</li>
+                        <li><span>Computing</span><br>java,python,C,Dsa,Dbms</li>
+                        <li><span>Simulation</span><br>Matlab,Vivado,LT-spice,Multisim</li>
+                        <li><span>computer-aided Design</span><br>Figma,Auto-desk</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023</span><br>INTERN Trainee at HAL(Hyderabad)</li>
+                        <li><span>2022</span><br>Industrial Experience(BSNL)</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2020-Current</span><br>B.Tech in ECE from ANITS<br>CGPA (8.94)</li>
+                        <li><span>2018-2020</span><br>Intermediate(10+2)<br>percentage (89.6%)</li>
+                        <li><span>2018</span><br>Highschool<br>percentage (82.2%)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div> 
+</div>
+<!-- ----------projects--------- -->
+<div id="projects">
+    <div class="container">
+        <h1 class="sub-title">My Projects</h1>
+        <div class="projects-list">
+            <div>
+                <i class="fa-solid fa-robot"></i>
+                <h2>Humanoid Robot</h2>
+                <p>Designed and developed a cost-effective humanoid robot, incorporating a single-board computer (ESP-32).
+                AI frameworks, ultrasonic sensors(HC-SR04), Li-ion batteries and DC motor drives for human-like speech,
+                and navigation.</p>
+               
+            </div>
+            <div>
+                <i class="fa-solid fa-dog"></i>
+                <h2>Pet Resq</h2>
+                <p>Formulated and prototyped a responsive pet rescue website in Figma,
+                 emphasizing user-centricity to connect stray animals with prospective 
+                 adopters.</p>
+               
+            </div>
+            <div>
+                <i class="fa-solid fa-bell"></i>
+                <h2>Anti-Sleep Alarm For Drivers</h2>
+                <p>Devised and implemented using Arduino Nano V3.0 an eye blink sensor 
+                LM393,and a Piezo buzzer to prevent accidents caused by drowsy driving.</p>
+                
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------portfolio----------- -->
+<div id="Portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/41.png">
+                <div class="layer">
+                    <h3>Humanoid Robot</h3>
+                    <p>Created a mid-sized humanoid model capable of interacting with people,
+                     walking, gesturing, and displaying visual signs(0.96Cm OLED), contributing 
+                     to the advancement of robotic aesthetics and functionality.</p>
+                    <a href="images/REPORT.pdf"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/40.png">
+                <div class="layer">
+                    <h3>Pet Resq</h3>
+                    <p>Implemented user-friendly features, such as comprehensive stray reporting,
+                     adoption listings, and community-building forums, contributing to the successful
+                     launch of the "Pet ResQ" platform, which promotes animal welfare and adoption.</p>
+                    <a href="https://www.figma.com/file/ED39LBTJw4d4LIsxGs3NRt/Pet-ResQ(SAI-SURYA-TEJA-M)?type=design&node-id=0-1&mode=design&t=hxJ1vjXxDeJSirRq-0"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/42.png">
+                <div class="layer">
+                    <h3>Anti-Sleep Alarm For Drivers</h3>
+                    <p>Analyzed a safety solution to detect driver drowsiness, sound an alert(+5V/+6V)
+                     when the driver begins to fall asleep, and automatically deactivate the alert when
+                    the driver regains alertness, enhancing road safety.</p>
+                    <a href="https://drive.google.com/file/d/1oYJNKgqjuo9RTMq5h6AAwlEzlf5oObjO/view?usp=sharing"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+    </div>
+</div>
+<!-- ---------contact---------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> msst527@gmail.com</p>
+                <p><i class="fa-solid fa-square-phone"></i>+91 7981032373</p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/profile.php?id=100093334939738"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://twitter.com/_ivvvaan"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="https://www.instagram.com/sasoy._/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/surya-teja-modalavalasa-309781259/"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="images/my-CV.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="Email" name="Email" placeholder="Your email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © <i class="fa-solid fa-heart"></i>Surya Teja.</p>
+    </div>
+</div>
+
+
+
+
+
+
+
+<script>
+       
+       var tablinks = document.getElementsByClassName("tab-links");
+       var tabcontents = document.getElementsByClassName("tab-contents");
+       
+       function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link")
+        document.getElementById(tabname).classList.add("active-tab");
+       }
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzU_qUT1AC8u62SvH-EXrXZeteZVzPb54jjxBmz64JPrZ5SAePUFOZCcZ9QbzVi23ex/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response =>{
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+</body>
+</html>
